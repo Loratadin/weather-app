@@ -20,7 +20,6 @@ injectGlobal`
     border-spacing: 0;
    }
    body {
-    font-family: 'Cute Font', cursive;
     font-size: 14px;
     color: ${main};
     line-height: 1.8;
@@ -33,5 +32,11 @@ injectGlobal`
     ${media.xldesktop`
     font-size: 26px;
     `}
+   }
+   #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
    }
    `

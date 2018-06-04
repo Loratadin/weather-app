@@ -2,7 +2,7 @@ import React from 'react';
 import Titles from './components/Titles';
 import Form from './components/Form';
 import Weather from './components/Weather';
-import { Wrapper } from './AppStyle';
+import { Wrapper, Container, TitleStyled } from './AppStyle';
 
 const API_KEY = "0458137df9115519bc98d8e2925ed1a3";
 
@@ -44,16 +44,18 @@ class App extends React.Component {
   render() {
    return (
     <Wrapper>
-     <Titles/>
-     <Form getWeather={this.getWeather}/>
-     <Weather 
-       temperature={this.state.temperature}
-       city={this.state.city}
-       country={this.state.country}
-       humidity={this.state.humidity}
-       description={this.state.description}
-       error={this.state.error}
-     />
+      <Container>
+        <TitleStyled><Titles/></TitleStyled>
+        <Form getWeather={this.getWeather}/>
+        <Weather 
+          temperature={this.state.temperature}
+          city={this.state.city}
+          country={this.state.country}
+          humidity={this.state.humidity}
+          description={this.state.description}
+          error={this.state.error}
+        />
+      </Container>
     </Wrapper>
    );
   }
