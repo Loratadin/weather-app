@@ -1,12 +1,10 @@
 import styled from 'styled-components';
-import { marine } from './theme/variables';
+import { light } from './theme/variables';
 
 export const Wrapper = styled.div`
 position: relative;
-  background-image: url('${require('./assets/bg.jpg')}');
+  background: url('${require('./assets/bg.jpg')}') center center no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -17,6 +15,10 @@ position: relative;
 
 export const Container = styled.div`
   position: relative;
+  display: grid;
+  grid-template-areas:
+    'title title title title form form form form'
+    'title title title title weather weather weather weather';
   height: 90vh;
   width: 80%;
   background: rgba(4, 37, 41, 0.7);
@@ -28,14 +30,22 @@ export const TitleStyled = styled.div`
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
 font-family: 'Amatic SC', cursive;
 position: absolute;
+grid-area: title;
 height: 100%;
-width: 30%;
-background: url('${require('./assets/wolf.jpg')}') center center no-repeat;
+background: url('${require('./assets/wolf.jpg')}') left center no-repeat;
 background-size: cover;
 display: flex;
 align-items: center;
 justify-content: center;
 text-align: center;
-color: #000;
+color: ${light};
 z-index: 2;
+`;
+
+export const FormStyled = styled.div`
+grid-area: form;
+`;
+
+export const WeatherStyled = styled.div`
+grid-area: weather;
 `;
