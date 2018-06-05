@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { light } from './theme/variables';
+import { light, marine } from './theme/variables';
 
 export const Wrapper = styled.div`
 position: relative;
@@ -58,13 +58,16 @@ z-index: 2;
   border-bottom: solid 1px ${light};
   width: 30%;
   padding-bottom: 4px;
-  color: #fff;
+  color: ${light};
   letter-spacing: 2px;
   margin-bottom: 30px;
   margin-right: 20px;
   font-size: 20px;
   outline: none;
  }
+ & input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px ${marine} inset;
+  -webkit-text-fill-color: ${light};
 `;
 
 export const WeatherStyled = styled.div`
