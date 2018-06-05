@@ -53,16 +53,18 @@ justify-content: center;
 text-align: center;
 z-index: 2;
  & input {
+  @import url('https://fonts.googleapis.com/css?family=Cute+Font');
+  font-family: 'Cute Font', cursive;
+  font-size: 25px;
+  color: ${light};
+  letter-spacing: 2px;
   background-color: transparent;
   border: 0;
   border-bottom: solid 1px ${light};
   width: 30%;
   padding-bottom: 4px;
-  color: ${light};
-  letter-spacing: 2px;
   margin-bottom: 30px;
   margin-right: 20px;
-  font-size: 20px;
   outline: none;
  }
  & input:-webkit-autofill {
@@ -70,14 +72,15 @@ z-index: 2;
   -webkit-text-fill-color: ${light};
  }
  & button {
-  @import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
+  @import url('https://fonts.googleapis.com/css?family=Amatic+SC:700');
   font-family: 'Amatic SC', cursive;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 20px;
   border: 0;
   padding: 8px 20px;
   margin: 0 2px;
   border-radius: 2px;
-  letter-spacing: 1px;
-  font-size: 15px;
   cursor: pointer;
   background-color: ${pink};
   color: ${marine};
@@ -86,10 +89,12 @@ z-index: 2;
 `;
 
 export const WeatherStyled = styled.div`
+@import url('https://fonts.googleapis.com/css?family=Cute+Font');
+font-family: 'Cute Font', cursive;
+font-size: 25px;
+letter-spacing: 2px;
 grid-area: weather;
 osition: absolute;
 padding: 10%;
-font-size: 20px;
-letter-spacing: 2px;
 z-index: 2;
 `;

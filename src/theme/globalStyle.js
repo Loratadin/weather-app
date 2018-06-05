@@ -3,7 +3,6 @@ import media from './media';
 import { light } from './variables';
 
 injectGlobal`
-   @import url('https://fonts.googleapis.com/css?family=Cute+Font');
    * {
     margin: 0;
     padding: 0;
