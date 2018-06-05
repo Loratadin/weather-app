@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { light, marine } from './theme/variables';
+import { light, marine, pink } from './theme/variables';
 
 export const Wrapper = styled.div`
 position: relative;
@@ -68,6 +68,21 @@ z-index: 2;
  & input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 30px ${marine} inset;
   -webkit-text-fill-color: ${light};
+ }
+ & button {
+  @import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
+  font-family: 'Amatic SC', cursive;
+  border: 0;
+  padding: 8px 20px;
+  margin: 0 2px;
+  border-radius: 2px;
+  letter-spacing: 1px;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: ${pink};
+  color: ${marine};
+  outline: none;
+ }
 `;
 
 export const WeatherStyled = styled.div`
