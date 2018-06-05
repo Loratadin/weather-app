@@ -52,6 +52,19 @@ align-items: center;
 justify-content: center;
 text-align: center;
 z-index: 2;
+ & input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: solid 1px ${light};
+  width: 30%;
+  padding-bottom: 4px;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  font-size: 20px;
+  outline: none;
+ }
 `;
 
 export const WeatherStyled = styled.div`
