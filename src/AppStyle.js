@@ -15,11 +15,6 @@ position: relative;
 
 export const Container = styled.div`
   position: relative;
-  display: grid;
-  grid-template-areas:
-    'title title title title form form form form'
-    'title title title title weather weather weather weather'
-    'title title title title weather weather weather weather';
   height: 90vh;
   width: 80%;
   background: rgba(4, 37, 41, 0.7);
@@ -31,8 +26,8 @@ export const TitleStyled = styled.div`
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
 font-family: 'Amatic SC', cursive;
 position: absolute;
-grid-area: title;
 height: 100%;
+width: 40%;
 background: url('${require('./assets/wolf.jpg')}') left center no-repeat;
 background-size: cover;
 display: flex;
@@ -43,9 +38,15 @@ padding: 10%;
 z-index: 2;
 `;
 
+export const FormWeatherContainer = styled.div`
+position: absolute;
+height: 100%;
+width: 60%;
+right: 0;
+`;
+
 export const FormStyled = styled.div`
-grid-area: form;
-osition: absolute;
+position: absolute;
 padding: 10%;
 display: flex;
 align-items: center;
@@ -93,8 +94,8 @@ export const WeatherStyled = styled.div`
 font-family: 'Cute Font', cursive;
 font-size: 25px;
 letter-spacing: 2px;
-grid-area: weather;
-osition: absolute;
+position: absolute;
+top: 40%;
 padding: 10%;
 z-index: 2;
 `;
