@@ -18,6 +18,7 @@ export const Container = styled.div`
   display: grid;
   grid-template-areas:
     'title title title title form form form form'
+    'title title title title weather weather weather weather'
     'title title title title weather weather weather weather';
   height: 90vh;
   width: 80%;
@@ -38,14 +39,26 @@ display: flex;
 align-items: center;
 justify-content: center;
 text-align: center;
-color: ${light};
+padding: 10%;
 z-index: 2;
 `;
 
 export const FormStyled = styled.div`
 grid-area: form;
+osition: absolute;
+padding: 10%;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+z-index: 2;
 `;
 
 export const WeatherStyled = styled.div`
 grid-area: weather;
+osition: absolute;
+padding: 10%;
+font-size: 20px;
+letter-spacing: 2px;
+z-index: 2;
 `;

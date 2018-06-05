@@ -1,6 +1,6 @@
 import { injectGlobal } from 'styled-components';
 import media from './media';
-import { main } from './variables';
+import { light } from './variables';
 
 injectGlobal`
    @import url('https://fonts.googleapis.com/css?family=Cute+Font');
@@ -21,7 +21,7 @@ injectGlobal`
    }
    body {
     font-size: 14px;
-    color: ${main};
+    color: ${light};
     line-height: 1.8;
     ${media.tablet`
     font-size: 18px;
