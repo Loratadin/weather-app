@@ -5,6 +5,7 @@ import media from './theme/media';
 export const Wrapper = styled.div`
   position: relative;
   background: url('${require('./assets/bg.jpg')}') center center no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   height: 100vh;
   width: 100vw;
@@ -21,13 +22,14 @@ export const Container = styled.div`
   background: rgba(4, 37, 41, 0.7);
   box-shadow: 0px 13px 40px -13px rgba(0,0,0,0.75);
   margin: 0 auto;
+  z-index: 2;
 `;
 
 export const TitleStyled = styled.div`
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
 font-family: 'Amatic SC', cursive;
 position: absolute;
-height: 100%;
+height: 60%;
 background: url('${require('./assets/wolf.jpg')}') left center no-repeat;
 background-size: cover;
 display: flex;
@@ -37,14 +39,21 @@ text-align: center;
 padding: 10%;
 z-index: 2;
 width: 100%;
+font-size: 20px;
 ${media.tablet`
   width: 100%;
+  font-size: 22px;
+  height: 60%;
 `}
 ${media.desktop`
   width: 40%;
+  font-size: 25px;
+  height: 100%;
 `}
 ${media.xldesktop`
   width: 40%;
+  font-size: 25px;
+  height: 100%;
 `}
 `;
 
@@ -52,15 +61,20 @@ export const FormWeatherContainer = styled.div`
 position: absolute;
 height: 100%;
 right: 0;
+background: rgba(4, 37, 41, 0.35);
 width: 100%;
+top: 60%;
 ${media.tablet`
-  width: 100%;
+  width:100%;
+  top: 60%;
 `}
 ${media.desktop`
   width: 60%;
+  top: 0;
 `}
 ${media.xldesktop`
   width: 60%;
+  top: 0;
 `}
 `;
 
