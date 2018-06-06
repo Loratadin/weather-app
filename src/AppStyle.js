@@ -7,8 +7,8 @@ export const Wrapper = styled.div`
   background: url('${require('./assets/bg.jpg')}') center center no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,8 +16,8 @@ export const Wrapper = styled.div`
 `;
 
 export const Container = styled.div`
-  position: relative;
-  height: 90vh;
+  position: absolute;
+  height: 90%;
   width: 80%;
   background: rgba(4, 37, 41, 0.7);
   box-shadow: 0px 13px 40px -13px rgba(0,0,0,0.75);
