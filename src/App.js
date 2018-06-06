@@ -40,7 +40,6 @@ class App extends React.Component {
       error: "Please enter the values."
     });
   }
-  console.log(data)
 }
   render() {
    return (
