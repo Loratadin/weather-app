@@ -16,7 +16,7 @@ class App extends React.Component {
     error: undefined
   }
   getWeather = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); //to prevent the default behaviour of the browser which is reloading onClick 
    const city = e.target.elements.city.value;
    const country = e.target.elements.country.value;
    const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?units=imperial&q=${city},${country}&APPID=${API_KEY}`);//variable contains the function that makes the call to this url
