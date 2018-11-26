@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import myKey from './config';
 import Titles from './components/Titles';
 import Form from './components/Form';
 import Weather from './components/Weather';
 import { Wrapper, Container, TitleStyled, FormStyled, WeatherStyled, FormWeatherContainer } from './AppStyle';
 
-const API_KEY = "0458137df9115519bc98d8e2925ed1a3";
+const API_KEY = myKey;
 
 class App extends React.Component {
   state = {
