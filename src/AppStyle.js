@@ -86,7 +86,9 @@ align-items: center;
 justify-content: center;
 text-align: center;
 z-index: 2;
- & input {
+ `;
+
+ export const Input = styled.input`
   @import url('https://fonts.googleapis.com/css?family=Cute+Font');
   font-family: 'Cute Font', cursive;
   color: ${light};
@@ -108,13 +110,14 @@ z-index: 2;
   ${media.xldesktop`
     width: 30%;
   `}
-  }
- & input:-webkit-autofill {
+  -webkit-autofill {
   -webkit-box-shadow: 0 0 0 30px ${marine} inset;
   -webkit-text-fill-color: ${light};
  }
- & button {
-  @import url('https://fonts.googleapis.com/css?family=Amatic+SC:700');
+ `;
+
+export const GetButton = styled.button`
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700');
   font-family: 'Amatic SC', cursive;
   font-weight: 700;
   letter-spacing: 2px;
@@ -127,7 +130,6 @@ z-index: 2;
   background-color: ${pink};
   color: ${marine};
   outline: none;
- }
 `;
 
 export const WeatherStyled = styled.div`
